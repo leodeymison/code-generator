@@ -3,5 +3,5 @@
 
 # Installation
 - yarn start
-or
+<br />or
 - npm start
