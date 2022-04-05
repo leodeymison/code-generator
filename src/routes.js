@@ -1,7 +1,8 @@
 const router = require('express').Router()
-const Basic = require('./controllers/basic')
+const Start = require('./controllers/rest/start')
 
-router.get('/', Basic)
+// Rest
+router.get('/rest', Start)
 
 
 module.exports = router
