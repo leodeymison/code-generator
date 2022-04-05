@@ -2,9 +2,9 @@
 <p>JavaScript code generator</p>
 
 # Installation
-- yarn start
+* yarn start
 <br />or
-- npm start
+* npm start
 
 Start: localhost:3000/rest
-* Código gerado nas pasta projects
+(obs: Código gerado nas pasta projects)
