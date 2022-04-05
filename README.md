@@ -5,3 +5,5 @@
 - yarn start
 <br />or
 - npm start
+
+Start: localhost:3000/rest
