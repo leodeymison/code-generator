@@ -7,4 +7,4 @@
 * npm start
 
 Start: localhost:3000/rest
-(obs: Código gerado nas pasta projects)
+(obs: Código gerado na pasta projects)
