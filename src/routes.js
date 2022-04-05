@@ -1,8 +1,11 @@
 const router = require('express').Router()
-const Start = require('./controllers/rest/start')
+const Rest = require('./controllers/rest')
 
 // Rest
-router.get('/rest', Start)
+router.get('/rest', (req,res) => {
+    res.render('rest.ejs')
+})
+router.get('/rest/create', Rest.Create)
 
 
 module.exports = router
