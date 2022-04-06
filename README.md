@@ -6,5 +6,5 @@
 <br />or
 * npm start
 
-Start: localhost:3000/rest
+Start: localhost:3000/rest/create
 (obs: Código gerado na pasta projects)
