@@ -10,7 +10,7 @@ const config = {
 
 class Rest {
     View(req,res){
-        res.render('rest', {name: 'leo'})
+        res.send('rest')
     }
     Create(req,res){
         Folders(config.name)
