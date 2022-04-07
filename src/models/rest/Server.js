@@ -1,8 +1,15 @@
 const fs = require('fs')
-const data = require('./_DATA')
+const Imports = require('../models/import')
 
-function StartAppFile(name){
-    fs.writeFile(`projects/${name}/server.js`, data.Server(), (err) => {
+
+const data = () => { return `${Imports('app','./app.js')}
+
+app.listen(3001, console.log('ok'))
+`}
+
+function StartAppFile(config){
+    const name = config.name
+    fs.writeFile(`projects/${name}/server.js`, data(), (err) => {
         if(err) {
             res.send(err)
         }

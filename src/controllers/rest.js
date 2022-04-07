@@ -4,22 +4,26 @@ const App = require('../models/rest/App')
 const Server = require('../models/rest/Server')
 const Routes = require('../models/rest/Routes')
 
-const config = {
-    name: 'ProjectX'
+const Rest = {
+    js: {
+        react: {
+            rest: (config) => {
+                Folders(config)
+                PackageJson(config)
+                App(config)
+                Server(config)
+                Routes(config)
+                return
+            }
+        }
+    },
+    ts: {
+        react: {
+            rest: (config) => {
+                console.log('Não concluído '+config)
+            }
+        }
+    }
 }
 
-class Rest {
-    View(req,res){
-        res.send('rest')
-    }
-    Create(req,res){
-        Folders(config.name)
-        PackageJson(config.name)
-        App(config.name)
-        Server(config.name)
-        Routes(config.name)
-        res.json({mesage: 'ok'})
-    }
-}
-
-module.exports = new Rest()
+module.exports = Rest

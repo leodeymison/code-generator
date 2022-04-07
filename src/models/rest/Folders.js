@@ -1,7 +1,9 @@
 const fs = require('fs')
 
+
 // Arquitetura de pastas
-function startFolder(name){
+function startFolder(config){
+    const name = config.name
     const data = [
         `${name}`,
         `${name}/src`,

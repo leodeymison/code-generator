@@ -1,0 +1,1 @@
+module.exports = (name) => {return `module.exports = ${name}`}

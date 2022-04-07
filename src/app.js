@@ -1,5 +1,7 @@
+const cors = require('cors')
 const express = require('express')
 const App = express()
+App.use(cors())
 
 App.set('view engine','ejs')
 App.use(express.static('public'))

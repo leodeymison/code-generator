@@ -1,8 +1,19 @@
 const fs = require('fs')
-const data = require('./_DATA')
+const Imports = require('../models/import')
+const Exports = require('../models/export')
 
-function StartAppFile(name){
-    fs.writeFile(`projects/${name}/app.js`, data.App(), (err) => {
+const data = () => {return `${Imports("express","express")}
+const app = express()
+
+app.use('/', require('./routes'))
+
+
+${Exports("app")}
+`}
+
+function StartAppFile(config){
+    const name = config.name
+    fs.writeFile(`projects/${name}/app.js`, data(), (err) => {
         if(err) {
             res.send(err)
         }
