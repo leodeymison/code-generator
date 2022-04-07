@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const RestStart = require('./controllers/restStart')
+const RestStart = require('./controllers/rest/restStart')
 
 const config = {
     name: 'ProjectX',
